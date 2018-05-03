@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="vendors/angular.js" charset="utf-8"></script>
+    <script src="vendors/angular-route.js"></script>
+    <script src="scripts/client.js" charset="utf-8"></script>
+    <script src="scripts/service/shoe.service.js"></script>
+    <script src="scripts/controllers/shoe.controller.js"></script>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body ng-app="ShoeApp">
+    <h1>Shoe Store</h1>
+    <ul>
+        <li>
+            <a ng-href="#!/">Home</a>
+        </li>
+        <li>
+            <a ng-href="#!/shoe">Shoe</a>
+        </li>
+    </ul>
+    <ng-view></ng-view>
+</body>
+</html>
