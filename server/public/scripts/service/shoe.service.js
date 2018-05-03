@@ -18,7 +18,8 @@ app.service('ShoeService', ['$http', function ($http) {
     self.getShoes();
 
 
-self.deleteShoes = function (shoeToDelete) {
+self.deleteShoe = function (shoeToDelete) {
+    console.log(shoeToDelete)
     $http({
         method: "DELETE",
         url: "/shoe",

@@ -2,7 +2,7 @@
     <ul>
         <li ng-repeat="shoe in vm.shoeList">
             {{shoe.name}}: {{shoe.cost}}
-            <button ng-click="vm.deleteShoe()">Delete Shoe</button>
+            <button ng-click="vm.deleteShoe(shoe)">Delete Shoe</button>
             <button ng-click="vm.saveShoe()">Save Shoe</button>
         </li>
     </ul>
